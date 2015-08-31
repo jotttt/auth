@@ -1,0 +1,54 @@
+<div class="middle-box text-center loginscreen animated fadeInDown">
+
+	<div class="ttu-login">
+		<div class="m-b">
+			<div id="logo-vertical-c" class="center-block"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class=" btn-group pull-left m-b">
+					<a href="/login/et/$token$" id="login-est" class="btn btn-xs btn-default">$txt_estonian$</a>
+					<a href="/login/en/$token$" id="login-eng" class="btn btn-xs btn-grey">$txt_english$</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 m-b p-r-none">
+				<div class="btn-group pull-left">
+					<a id="uni-id-select" class="btn btn-sm btn-default" type="button">Uni-ID</a>
+					<a id="id-card-select" class="btn btn-sm btn-grey" type="button">$txt_ID-card$</a>
+					<a id="mobile-id-select" class="btn btn-sm btn-grey" type="button">$txt_mid$</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="login-content" class=""></div>
+
+	<form method="POST" action="/login/$lang$/$token$">
+		<div id="login-content-wrapper">
+			<div id="login-content-uni-id" class="hidden">
+				<div class="form-group"><input type="text" name="uname" autocomplete="off" class="form-control" placeholder="$txt_usr$"></div>
+				<div class="form-group"><input type="password" name="secret" autocomplete="off" class="form-control" placeholder="$txt_pwd$"></div>
+			</div>
+			<div id="login-content-id-card" class="hidden"><div class="form-group"></div></div>
+			<div id="login-content-mobile-id" class="hidden"><div class="form-group"><input type="tel" class="form-control" placeholder="$txt_mobile_nr_placeholder$"></div></div>
+		</div>
+		<button type="submit" class="btn btn-primary block full-width m-b">$txt_login$</button>
+	</form>
+
+	<div class="row">
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8">
+			<small class="center-block">$txt_auth_footer$ 1.1 &copy; 2015</small>
+		</div>
+		<div class="col-xs-2">
+			<a data-toggle="modal" href="#modal-form" class="fa fa-question-circle pull-right text-muted" style="font-size: 21px;"></a>
+		</div>
+	</div>
+</div>
+
+
+$ask_mid_pin$
